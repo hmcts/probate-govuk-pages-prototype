@@ -1,0 +1,119 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Probate stop
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+  beta
+</strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your
+      <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div> -->
+
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        <!-- {% if serviceName %} {{ serviceName }} {% endif %} -->
+        Get notified when a grant of probate is issued
+      </h1>
+
+      <p>You can get a copy of someone's will and grant of probate when it's been issued by the probate registry.
+         All grants of probate are public records.</p>
+
+      <p>You may want to stop an application for a grant of probate when:</p>
+
+
+
+
+
+        <h3 class="govuk-heading-m">You will need:</h3>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>the full name of the person who died (and any other names they were known by)</li>
+          <li>the exact date they died</li>
+          <li>a home address in England or Wales</li>
+        </ul>
+
+
+      <h3 class="govuk-heading-m">Fees</h3>
+
+        <p>It costs £20...</p>
+
+        <p>Text</p>
+
+        <p>You'll need to pay online by debit or credit card.</p>
+
+
+        <a href="#" role="button" draggable="false" class="govuk-button govuk-button--start">
+          Start now
+        </a>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <!-- <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Subsection
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div> -->
+  </div>
+{% endblock %}

@@ -1,0 +1,125 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Probate services
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+  beta
+</strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your
+      <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div> -->
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">
+      <!-- {% if serviceName %} {{ serviceName }} {% endif %} -->
+      Apply for probate or stop an application for probate
+    </h1>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <p>Probate gives you the legal right to deal with a person’s property, money and possessions (their ‘estate’) after they’ve died.</p>
+
+      <h3 class="govuk-heading-m">Apply for probate</h3>
+
+        <p>You can complete and pay for an application for probate online.
+          You may also need to post some supporting documents.
+          We'll let you know what you need to send when you've completed your application.</p>
+
+          <a href="/v1/start-page-apply" class="govuk-link govuk-!-font-size-19">Make an application for probate</a>
+
+          <br>
+          <br>
+          <br>
+
+      <h3 class="govuk-heading-m">Stop an application for probate</h3>
+
+        <p>Use this service to stop an application for a grant of probate. This is also known as 'entering a caveat'.</p>
+
+          <a href="/v1/start-page-stop" class="govuk-link govuk-!-font-size-19">Stop an application for probate</a>
+
+          <br>
+          <br>
+          <br>
+
+      <h3 class="govuk-heading-m">Get notified when a grant of probate is issued</h3>
+
+        <p>You can get a copy of someone's will and grant of probate when it's been issued by the probate registry.
+          All grants of probate are public records.</p>
+
+          <a href="/v1/start-page-search" class="govuk-link govuk-!-font-size-19">Get notified when a grant of probate is issued</a>
+
+          <br>
+          <br>
+          <br>
+
+
+
+
+
+
+
+
+    </div>
+
+    <!-- <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Subsection
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div> -->
+  </div>
+{% endblock %}

@@ -1,0 +1,125 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Probate apply
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+  beta
+</strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your
+      <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div> -->
+
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        <!-- {% if serviceName %} {{ serviceName }} {% endif %} -->
+        Apply for probate
+      </h1>
+
+      <p>Probate gives you the legal right to deal with a person’s property, money and possessions (their ‘estate’) after they’ve died.</p>
+
+      <p>You can complete and pay for an application for probate online.
+        You may also need to post some supporting documents.
+        We'll let you know what you need to send when you've completed your application.</p>
+
+      <h3 class="govuk-heading-m">Joint applications</h3>
+
+        <p>If more than one person is dealing with the estate you can only apply online if the person who died left a will.</p>
+
+        <p>You must tell the other executors that you’re naming them in your application.
+          They’ll be asked to confirm online that the information you provide is correct.</p>
+
+
+        <p>The other applying executors need to have:</p>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>seen the original will</li>
+          <li>a mobile phone and email address</li>
+          <li>access to the internet</li>
+        </ul>
+
+
+
+      <h3 class="govuk-heading-m">Fees</h3>
+
+        <p>It costs £215 to apply for probate if the value of the estate is more than £5,000. It’s free if the value is less.</p>
+
+        <p>Extra copies of the grant of probate cost 50p each.</p>
+
+        <p>You’ll need to pay online by debit or credit card.</p>
+
+
+        <a href="https://probate-prototype.herokuapp.com/screening-questions/death-certificate" role="button" draggable="false" class="govuk-button govuk-button--start">
+          Start now
+        </a>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <!-- <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Subsection
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div> -->
+  </div>
+{% endblock %}

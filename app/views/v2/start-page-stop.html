@@ -1,0 +1,136 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Probate stop
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+  beta
+</strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your
+      <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+  <!-- <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div> -->
+
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        <!-- {% if serviceName %} {{ serviceName }} {% endif %} -->
+        Stop a grant of probate
+      </h1>
+
+      <p>Use this service to stop an application for a grant of probate. This is also known as 'entering a caveat'.</p>
+
+      <p>You may want to stop an application for a grant of probate when:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>you think the person who made the will was being influenced by someone else or was not able to make their own decisions</li>
+        <li>the person applying for probate refuses to share a copy of the will with you</li>
+        <li>you think the person applying won’t be able to carry out the instructions in the will</li>
+        <li>you think the person applying is not eligible to apply if there is no will (see <a href="https://www.gov.uk/inherits-someone-dies-without-will">who inherits if there is no will)</a></li>
+      </ul>
+
+      <p>These are the most common reasons, but there may be others too.</p>
+
+      <p>If more than one person is dealing with the estate you can only apply online if the person who died left a will.</p>
+
+        <p>You should always try to come to an agreement with the person applying for probate before you stop their application.</p>
+
+        <div class="govuk-warning-text">
+          <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+          <strong class="govuk-warning-text__text">
+            <span class="govuk-warning-text__assistive">Warning</span>
+            You may have to pay legal costs if you stop an application without a good reason.
+          </strong>
+        </div>
+
+
+        <h3 class="govuk-heading-m">You will need:</h3>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>the full name of the person who died (and any other names they were known by)</li>
+          <li>the exact date they died</li>
+          <li>a home address in England or Wales</li>
+        </ul>
+
+
+      <h3 class="govuk-heading-m">Fees</h3>
+
+        <p>It costs £20 to stop an application for 6 months.</p>
+
+        <p>You will need to apply again if you want to stop the application for a further 6 months</p>
+
+        <p>You'll need to pay online by debit or credit card.</p>
+
+
+        <a href="#" role="button" draggable="false" class="govuk-button govuk-button--start">
+          Start now
+        </a>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <!-- <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Subsection
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div> -->
+  </div>
+{% endblock %}
