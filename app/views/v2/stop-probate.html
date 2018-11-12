@@ -1,0 +1,198 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Probate services
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Births, deaths, marriages and care</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Death and bereavement</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/GOVUK-pages/overview">Wills, probate and inheritance</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Probate services</a>
+      </li>
+    </ol>
+  </div>
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">
+      <!-- {% if serviceName %} {{ serviceName }} {% endif %} -->
+      Probate services
+    </h1>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <p class="govuk-!-font-size-16">Contents</p>
+
+      <ul class="govuk-list ">
+  <li class="govuk-!-font-size-16">— <a class="govuk-link govuk-!-font-size-16" href="/v2/apply-for-probate">Apply for probate</a></li>
+  <li class="govuk-!-font-size-16">— Stop an application for probate</li>
+  <li class="govuk-!-font-size-16">— <a class="govuk-link govuk-!-font-size-16" href="/v2/notified-probate">Get notified when a grant of probate is issued</a></li>
+
+</ul>
+
+  <!-- <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible"> -->
+
+</div>
+
+
+
+
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+        <h1 class="govuk-heading-l">
+          Stop an application for probate
+        </h1>
+
+        <p>Use this service to stop an application for a grant of probate. This is also known as 'entering a caveat'.</p>
+
+        <p>You may want to stop an application for a grant of probate when:</p>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>you think the person who made the will was being influenced by someone else or was not able to make their own decisions</li>
+          <li>the person applying for probate refuses to share a copy of the will with you</li>
+          <li>you think the person applying won’t be able to carry out the instructions in the will</li>
+          <li>you think the person applying is not eligible to apply if there is no will (see <a href="https://www.gov.uk/inherits-someone-dies-without-will">who inherits if there is no will)</a></li>
+        </ul>
+
+        <p>These are the most common reasons, but there may be others too.</p>
+
+          <p>You should always try to come to an agreement with the person applying for probate before you stop their application.</p>
+
+          <div class="govuk-warning-text">
+            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+            <strong class="govuk-warning-text__text">
+              <span class="govuk-warning-text__assistive">Warning</span>
+              You may have to pay legal costs if you stop an application without a good reason.
+            </strong>
+          </div>
+
+
+          <h3 class="govuk-heading-m">You will need:</h3>
+
+          <ul class="govuk-list govuk-list--bullet">
+            <li>a home address in England or Wales</li>
+            <li>the full name of the person who died (and any other names they were known by)</li>
+            <li>the exact date they died</li>
+          </ul>
+
+
+        <h3 class="govuk-heading-m">Fees</h3>
+
+          <p>It costs £20 to stop an application for 6 months.</p>
+
+          <p>You will need to apply again if you want to stop the application for a further 6 months</p>
+
+          <p>You'll need to pay online by debit or credit card.</p>
+
+
+          <a href="https://probate-caveat-proto.herokuapp.com/applicant/name" role="button" draggable="false" class="govuk-button govuk-button--start">
+            Start now
+          </a>
+
+
+        <br>
+        <br>
+        <br>
+
+
+        <a href="/v2/apply-for-probate"><strong class="govuk-!-font-size-19"> < Previous</strong> <br>Apply for probate</a>
+
+        <br>
+        <br>
+
+        <a href="/v2/notified-probate"><strong class="govuk-!-font-size-19">Next ></strong> <br>Get notified when a grant of probate is issued</a>
+
+
+
+    </div>
+    <!-- <div class="govuk-grid-column-one-third">
+
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible section-blue">
+
+      <aside role="complementary">
+        <h2 class="govuk-heading-s" id="subsection-title">
+          Related content
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                Inheritance Tax
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Making a will
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Claim or refer an unclaimed estate
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Valuing the estate of someone who's died
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                What to do after someone dies
+              </a>
+            </li>
+
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+            <p class="govuk-!-font-size-16">Explore the topic</p>
+
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                Inheritance Tax <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                Capital Gains Tax <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                Death and bereavement <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+      </aside>
+
+    </div> -->
+  </div>
+{% endblock %}
