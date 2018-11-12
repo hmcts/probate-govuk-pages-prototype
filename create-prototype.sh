@@ -5,24 +5,24 @@ echo Please enter the version of the Prototype:
 read version_number
 
 # Heroku App creation and Configuration:
-heroku apps:create probate-pa-service-prototype-v$version_number --region eu
+heroku apps:create probate-pa-service-proto-v$version_number --region eu
 
 # Create username for the prototype
 echo Please enter the username you would like to use:
 read user_name
-heroku config:set USERNAME=$user_name --app probate-pa-service-prototype-v$version_number
+heroku config:set USERNAME=$user_name --app probate-pa-service-proto-v$version_number
 
 # Create password for the prototype
 echo Please enter the password you would like to use:
 read password
-heroku config:set PASSWORD=$password --app probate-pa-service-prototype-v$version_number
+heroku config:set PASSWORD=$password --app probate-pa-service-proto-v$version_number
 
 # Add new app to list of git remote repositories
-git remote add probate-pa-service-prototype-v$version_number git@heroku.com:probate-pa-service-prototype-v$version_number.git
-heroku git:remote -a probate-pa-service-prototype-v$version_number -r probate-pa-service-prototype-v$version_number
+git remote add probate-pa-service-proto-v$version_number git@heroku.com:probate-pa-service-proto-v$version_number.git
+heroku git:remote -a probate-pa-service-proto-v$version_number -r probate-pa-service-proto-v$version_number
 
 # Push to main application and new Version of Prototype
-git push heroku master && git push probate-pa-service-prototype-v$version_number master
+git push heroku master && git push probate-pa-service-proto-v$version_number master
 
 
 ##############################################################
