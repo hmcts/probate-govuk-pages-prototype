@@ -1,0 +1,182 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Find a will start page
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Births, deaths, marriages and care</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Death and bereavement</a>
+      </li>
+    </ol>
+  </div>
+
+{% endblock %}
+
+{% block content %}
+
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <!-- <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible"> -->
+
+        <h1 class="govuk-heading-xl">
+          <!-- {% if serviceName %} {{ serviceName }} {% endif %} -->
+          Find a will or probate document (England and Wales)
+        </h1>
+
+
+        <p>Find a will or ‘grant of representation’ for people who died in or after 1858.</p>
+
+        <p>A ‘grant of representation’ gives someone the legal right to deal with a deceased person’s estate. This right is called ‘probate’.</p>
+
+        <p>You can order copies of documents online. They cost £10 each - you can pay by debit or credit card.</p>
+
+        <div class="govuk-inset-text">
+          It can take up to 10 working days for you to receive your documents. Working days do not include weekends or public holidays.
+        </div>
+
+        <a href="/find-a-will/find-a-will" role="button" draggable="false" class="govuk-button govuk-button--start">
+          Start now
+        </a>
+
+    <br>
+    <br>
+
+        <h1 class="govuk-heading-m">
+          Before you start
+        </h1>
+
+          <p>There’s a different procedure in <a href="#1">Scotland</a> and <a href="#2">Northern Ireland</a>.</p>
+
+          <p>New probate records appear online approximately 14 days after the grant of representation has been issued.</p>
+
+          <h1 class="govuk-heading-s">
+            Wills and probate records from 1858 to 1996
+          </h1>
+
+          <p>If you cannot find the record you’re looking for, check the years after the person died. These records are stored under the year the grant was issued, rather than the year of death.</p>
+
+          <p>To find the will of someone who died in the early 1990s, you may need to check the records that cover 1996 onwards.</p>
+
+          <h1 class="govuk-heading-s">
+            Types of grant
+          </h1>
+
+          <p>Not all grants of representation contain a will. Check the type of grant when you search:</p>
+
+          <ul class="govuk-list govuk-list--bullet">
+            <li>‘Probate’ or ‘Grant and Will’ - a will exists and will be provided</li>
+            <li>‘Admon with Will’ or ‘Grant and Will’ - a will exists and will be provided</li>
+            <li>‘Administration (Admon) or Grant’ - a will does not exist and will not be provided</li>
+          </ul>
+
+          <h1 class="govuk-heading-m">
+            Other ways to apply
+          </h1>
+
+          <p>Download and fill in <a href="#3"> form PA1S</a>.</p>
+
+          <p>It costs £10 for a search, which includes a copy of the grant of representation and the will (if there is one).</p>
+
+          <p>The address you need is on the form. You should get a response within 4 weeks.</p>
+
+          <br>
+
+
+        <!-- <a href="/GOVUK-pages/after-you-applied"><strong class="govuk-!-font-size-19"> < Previous</strong> <br>After you've applied</a>
+
+        <br>
+        <br>
+
+        <a href="/GOVUK-pages/search-probate"><strong class="govuk-!-font-size-19">Next ></strong> <br>Search for probate records</a> -->
+
+
+
+    </div>
+    <div class="govuk-grid-column-one-third">
+
+
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible section-blue">
+
+      <aside role="complementary">
+        <h2 class="govuk-heading-s" id="subsection-title">
+          Related content
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#rc1">
+                Wills, probate and inheritance
+              </a>
+            </li>
+            <li>
+              <a href="#rc2">
+                Find a soldier's will
+              </a>
+            </li>
+
+            <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="/v3/apply-for-probate">
+              Apply for probate
+              </a>
+            </li>
+            <li>
+              <a href="/v3/stop-probate">
+                Stop an application for probate
+              </a>
+            </li>
+            <li>
+              <a href="/v3/notified-probate">
+                Get notified when a grant of probate is issued
+              </a>
+            </li>
+
+
+
+
+
+          </ul>
+
+
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+            <p class="govuk-!-font-size-16">Explore the topic</p>
+
+            <li>
+              <a href="#rc6" class="govuk-!-font-weight-bold">
+                Inheritance Tax <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+            <li>
+              <a href="#rc7" class="govuk-!-font-weight-bold">
+                Capital Gains Tax <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+            <li>
+              <a href="#rc8" class="govuk-!-font-weight-bold">
+                Death and bereavement <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+{% endblock %}
