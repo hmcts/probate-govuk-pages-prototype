@@ -1,7 +1,7 @@
 {% extends "layout-FW.html" %}
 
 {% block pageTitle %}
-  Find a will mock up
+  Find a will MOCK UP
 {% endblock %}
 
 {% block header %}
@@ -104,7 +104,20 @@
   </style>
 
   <script>
+
+//     function searchResults() {
+//     var x = document.getElementById("searchSurname").value;
+//     document.getElementById("demo").innerHTML = x;
+// }
+
   function myFunction() {
+
+      var x = document.getElementById("searchSurname").value;
+      document.getElementById("surnameResult").innerHTML = x;
+
+      var x = document.getElementById("yearOfDeath").value;
+      document.getElementById("yearResult").innerHTML = x;
+
       var x = document.getElementById("noResults");
       if (x.style.display === "none") {
           x.style.display = "block";
@@ -176,7 +189,7 @@
         <label class="govuk-label govuk-!-width-two-thirds" for="two-thirds">
           Year of death
         </label>
-        <input class="govuk-input govuk-!-width-two-thirds" placeholder="eg 1996" id="yearOfDeath" name="earOfDeath" type="number">
+        <input class="govuk-input govuk-!-width-two-thirds" placeholder="eg 1996" id="yearOfDeath" name="yearOfDeath" type="number">
       </div>
 
       <!-- <button onclick="myFunction()" class="govuk-button">
@@ -202,7 +215,6 @@
           Can't find what you are looking for? Try searching again using different search terms. You can also look through each year using the 'previous' and 'next' links.
         </p>
       </div>
-
 
   </section>
   <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
