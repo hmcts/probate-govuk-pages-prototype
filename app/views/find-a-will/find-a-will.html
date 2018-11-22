@@ -113,10 +113,46 @@
   function myFunction() {
 
       var x = document.getElementById("searchSurname").value;
-      document.getElementById("surnameResult").innerHTML = x;
+      document.getElementById("surnameResult").innerHTML = x.toUpperCase();
+
+      var x = document.getElementById("searchSurname").value;
+      document.getElementById("surnameResult1").innerHTML = x.toUpperCase();
+
+      var x = document.getElementById("searchSurname").value;
+      document.getElementById("surnameResult2").innerHTML = x.toUpperCase();
+
+      var x = document.getElementById("searchSurname").value;
+      document.getElementById("surnameResult3").innerHTML = x.toUpperCase();
+
+      var x = document.getElementById("searchSurname").value;
+      document.getElementById("surnameResult4").innerHTML = x.toUpperCase();
 
       var x = document.getElementById("yearOfDeath").value;
       document.getElementById("yearResult").innerHTML = x;
+
+      var x = document.getElementById("yearOfDeath").value;
+      document.getElementById("yearResult1").innerHTML = x;
+
+      var x = document.getElementById("yearOfDeath").value;
+      document.getElementById("yearResult2").innerHTML = x;
+
+      var x = document.getElementById("yearOfDeath").value;
+      document.getElementById("yearResult3").innerHTML = x;
+
+      var x = document.getElementById("yearOfDeath").value;
+      document.getElementById("yearResult4").innerHTML = x;
+
+      var x = document.getElementById("yearOfDeath").value;
+      document.getElementById("yearResult5").innerHTML = x;
+
+      var x = document.getElementById("yearOfDeath").value;
+      document.getElementById("yearResult6").innerHTML = x;
+
+      var x = document.getElementById("yearOfDeath").value;
+      document.getElementById("yearResult7").innerHTML = x;
+
+      var x = document.getElementById("yearOfDeath").value;
+      document.getElementById("yearResult8").innerHTML = x;
 
       var x = document.getElementById("noResults");
       if (x.style.display === "none") {
@@ -203,18 +239,80 @@
        <br>
 
        <div id="noResults" style="display: none;">
-        <strong class="govuk-!-font-size-24">No results</strong> with the name <strong id="surnameResult" class="govuk-!-font-size-24">BLOGGS</strong> and the year of death <strong id="yearResult" class="govuk-!-font-size-24">2018</strong>
+        <strong class="govuk-!-font-size-24">4 results</strong> with the name <strong id="surnameResult" class="govuk-!-font-size-24">BLOGGS</strong> and the year of death <strong id="yearResult" class="govuk-!-font-size-24">2018</strong>
         <br>
         <br>
-        <p>If the person died in the last 6 months you can <a href="/v3/notified-probate">apply online </a> to get notified when the grant of probate is issued.</p>
+        <p>If the person died in the last 6 months you can <a href="/v3/notified-probate">apply online</a> to get notified when the grant of probate is issued.</p>
 
-        <a href="#tab"> < Previous</a>
+        <a href="#tab"> < Previous year</a>
         <br>
         <br>
-        <p>
+        <!-- <p>
           Can't find what you are looking for? Try searching again using different search terms. You can also look through each year using the 'previous' and 'next' links.
-        </p>
+        </p> -->
+
+        <table class="govuk-table">
+
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="col">Surname</th>
+              <th class="govuk-table__header" scope="col">First name</th>
+              <th class="govuk-table__header" scope="col">Date of probate</th>
+              <th class="govuk-table__header" scope="col">Probate number</th>
+              <th class="govuk-table__header" scope="col">Date of death</th>
+              <th class="govuk-table__header" scope="col">Document type</th>
+              <th class="govuk-table__header" scope="col">Registry</th>
+              <th class="govuk-table__header" scope="col"></th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><p id="surnameResult1" class="govuk-!-font-size-19"></p></td>
+              <td class="govuk-table__cell">JAMES</td>
+              <td class="govuk-table__cell">19 July <p id="yearResult1" class="govuk-!-font-size-29"></p></td>
+              <td class="govuk-table__cell">5429122</td>
+              <td class="govuk-table__cell">16 January <p id="yearResult2" class="govuk-!-font-size-29"></p></td>
+              <td class="govuk-table__cell">Grant and will</td>
+              <td class="govuk-table__cell">Oxford</td>
+              <td class="govuk-table__cell"><a herf="#1" style="text-decoration: underline; color: #005ea5;"> Add to basket</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><p id="surnameResult2" class="govuk-!-font-size-19"></p></td>
+              <td class="govuk-table__cell">RUBY</td>
+              <td class="govuk-table__cell">04 April <p id="yearResult3" class="govuk-!-font-size-29"></p></td>
+              <td class="govuk-table__cell">5497552</td>
+              <td class="govuk-table__cell">04 January <p id="yearResult4" class="govuk-!-font-size-29"></p></td>
+              <td class="govuk-table__cell">Grant only</td>
+              <td class="govuk-table__cell">Manchester</td>
+              <td class="govuk-table__cell"><a herf="#2" style="text-decoration: underline; color: #005ea5;"> Add to basket</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><p id="surnameResult3" class="govuk-!-font-size-19"></p></td>
+              <td class="govuk-table__cell">ALICE</td>
+              <td class="govuk-table__cell">19 July <p id="yearResult5" class="govuk-!-font-size-29"></p></td>
+              <td class="govuk-table__cell">5474633</td>
+              <td class="govuk-table__cell">16 March <p id="yearResult6" class="govuk-!-font-size-29"></p></td>
+              <td class="govuk-table__cell">Grant only</td>
+              <td class="govuk-table__cell">Liverpool</td>
+              <td class="govuk-table__cell"><a herf="#3" style="text-decoration: underline; color: #005ea5;"> Add to basket</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><p id="surnameResult4" class="govuk-!-font-size-19"></p></td>
+              <td class="govuk-table__cell">JOHN</td>
+              <td class="govuk-table__cell">19 October <p id="yearResult7" class="govuk-!-font-size-29"></p></td>
+              <td class="govuk-table__cell">5406382</td>
+              <td class="govuk-table__cell">02 April <p id="yearResult8" class="govuk-!-font-size-29"></p></td>
+              <td class="govuk-table__cell">Grant and will</td>
+              <td class="govuk-table__cell">Cardiff</td>
+              <td class="govuk-table__cell"><a herf="#4" style="text-decoration: underline; color: #005ea5;"> Add to basket</a></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+
+      <a href="#tab"> < Previous year</a>
+
+
 
   </section>
   <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
