@@ -1,0 +1,277 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOVUK pages
+{% endblock %}
+
+<!-- {% block header %}
+  {{ govukHeader() }}
+{% endblock %} -->
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Births, deaths, marriages and care</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Death and bereavement</a>
+      </li>
+    </ol>
+  </div>
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">
+      <!-- {% if serviceName %} {{ serviceName }} {% endif %} -->
+      Wills, probate and <br>inheritance
+    </h1>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <p class="govuk-!-font-size-16">Contents</p>
+
+      <ul class="govuk-list ">
+        <li class="govuk-!-font-size-16">— <a class="govuk-link govuk-!-font-size-16" href="/GOVUK-pages/overview">Overview</a></li>
+        <li class="govuk-!-font-size-16">— <a class="govuk-link govuk-!-font-size-16" href="/GOVUK-pages/if-the-person-left-a-will">If the person left a will</a></li>
+        <li class="govuk-!-font-size-16">— <a class="govuk-link govuk-!-font-size-16" href="/GOVUK-pages/if-the-person-did-not-leave-a-will">If the person did not leave a will</a></li>
+        <li class="govuk-!-font-size-16">— <a class="govuk-link govuk-!-font-size-16" href="/GOVUK-pages/executor">If you’re an executor</a></li>
+        <li class="govuk-!-font-size-16">— Applying for probate</li>
+        <li class="govuk-!-font-size-16">— <a class="govuk-link govuk-!-font-size-16" href="/GOVUK-pages/after-you-applied">After you've applied</a></li>
+        <li class="govuk-!-font-size-16">— <a class="govuk-link govuk-!-font-size-16" href="/GOVUK-pages/stopping-probate">Stopping a probate application</a></li>
+        <li class="govuk-!-font-size-16">— <a class="govuk-link govuk-!-font-size-16" href="/GOVUK-pages/search-probate">Search for probate records</a></li>
+
+
+</ul>
+
+</div>
+
+
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+        <h1 class="part-title">
+          Applying for probate
+        </h1>
+
+        <p>You can apply for probate yourself if you're an executor. A solicitor or another person licensed to provide probate services can also apply on your behalf.</p>
+
+        <p>Before you apply, you must <a href="https://www.gov.uk/valuing-estate-of-someone-who-died">estimate and report the estate’s value</a>. Depending on the value, you may have to pay <a href="https://www.gov.uk/inheritance-tax">Inheritance Tax</a>.</p>
+
+
+            <h1 class="govuk-heading-m">
+              Apply online
+            </h1>
+
+            <p>You can use this service if you're the executor and you have:</p>
+
+          <ul class="govuk-list govuk-list--bullet">
+            <li>the original will</li>
+            <li>the original death certificate or an <a href="https://www.gov.uk/after-a-death/when-a-death-is-reported-to-a-coroner">interim death certificate from the coroner</a></li>
+          </ul>
+
+          <p>The person who died must have lived in England or Wales most of the time.</p>
+
+            <a href="http://probate-prototype.herokuapp.com/start" role="button" draggable="false" class="govuk-button govuk-button--start">
+              Apply for probate
+            </a>
+            <br>
+            <a class="govuk-!-font-size-19" href="#1">
+              Return to an existing probate application</a>
+
+            <br>
+            <br>
+            <br>
+
+        <h1 class="govuk-heading-m">
+          Apply by post
+        </h1>
+
+        <p>If the person who died left a will, <a href="#2">fill in the probate application form PA1P</a>.</p>
+
+        <p>If the person who died did not leave a will, <a href="#2">fill in the probate application form PA1A</a>.</p>
+
+        <div class="govuk-inset-text">
+        Apply by post if you want to apply in Welsh.
+        </div>
+
+        <h1 class="govuk-heading-m">
+          Sending documents
+        </h1>
+        <p>You'll need to send some documents by post to support your application. Use a signed-for postal service.</p>
+
+        <h1 class="govuk-heading-s">
+            If you apply online
+        </h1>
+        <p>You'll need to send the original will and any updates ('codicils'). You may need to send some other documents, for example the death certificate.</p>
+
+        <p>After you submit your application you'll be told exactly what documents to send and where to send them.</p>
+
+          <h1 class="govuk-heading-s">
+              If you apply by post
+          </h1>
+
+        <p>You'll need to send these documents to your <a href="#3">local probate registry</a> along with your application form:
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>the original will and any updates</li>
+          <li>2 copies of the signed will and any additions on plain A4 paper (do not remove any staples or bindings to make the copies)</li>
+          <li>the death certificate or an <a href="#4 ">interim death certificate from the coroner</a></li>
+        </ul>
+
+          <h1 class="govuk-heading-s">
+              Returned documents
+          </h1>
+        <p>The death certificate will be returned to you but the original will and any updates will not be - this is because they become part of public record.</p>
+
+        <p>You may want to make copies of the will for your own records.</p>
+
+          <h1 class="govuk-heading-s">
+              Changes or damage to the will
+          </h1>
+
+        <p>You must include a cover letter when you send the will if it has changed in any way or been damaged since you've had it. This includes staples or bindings being removed.</p>
+
+        <p>Explain in the letter what has been changed and why.</p>
+
+
+        <h1 class="govuk-heading-m">
+          Fees
+        </h1>
+
+        <p>The application fee is based on the value of the estate. There's no fee if the estate is £50,000 or under.</p>
+
+        <table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Estate value</th>
+      <th class="govuk-table__header" scope="col">Fee</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell" scope="row">£50,000 or under</td>
+      <td class="govuk-table__cell">Free</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell" scope="row">Over £50,000 to £300,000</td>
+      <td class="govuk-table__cell">£250</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell" scope="row">Over £300,000 to £500,000</td>
+      <td class="govuk-table__cell">£750</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell" scope="row">Over £500,000 to £1 million</td>
+      <td class="govuk-table__cell">£2,500</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell" scope="row">Over £1 million to £1.6 million</td>
+      <td class="govuk-table__cell">£4,000</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell" scope="row">Over £1.6 million to £2 million</td>
+      <td class="govuk-table__cell">£5,000</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell" scope="row">Over £2 million</td>
+      <td class="govuk-table__cell">£6,000</td>
+    </tr>
+  </tbody>
+</table>
+      <p>To pay:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>apply online and pay by debit or credit card</li>
+        <li>call the probate registry between 9:30am and 3pm and pay by debit or credit card - you’ll be given a reference number to send with your documents</li>
+        <li>send a cheque payable to HM Courts & Tribunals Service with your documents</li>
+      </ul>
+      <p>Extra copies of the grant of probate cost £10 for the first copy and 50 pence for every copy after that. This means you can send them to different organisations at the same time.</p>
+        <br>
+        <br>
+
+
+        <a href="/GOVUK-pages/executor"><strong class="govuk-!-font-size-19"> < Previous</strong> <br>If you’re an executor</a>
+
+        <br>
+        <br>
+
+        <a href="/GOVUK-pages/after-you-applied"><strong class="govuk-!-font-size-19">Next ></strong> <br>After you've applied</a>
+
+
+
+    </div>
+    <div class="govuk-grid-column-one-third">
+
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible section-blue">
+
+      <aside role="complementary">
+        <h2 class="govuk-heading-s" id="subsection-title">
+          Related content
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#rc1">
+                Inheritance Tax
+              </a>
+            </li>
+            <li>
+              <a href="#rc2">
+                Making a will
+              </a>
+            </li>
+            <li>
+              <a href="#rc3">
+                Claim or refer an unclaimed estate
+              </a>
+            </li>
+            <li>
+              <a href="#rc4">
+                Valuing the estate of someone who's died
+              </a>
+            </li>
+            <li>
+              <a href="#rc5">
+                What to do after someone dies
+              </a>
+            </li>
+
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+            <p class="govuk-!-font-size-16">Explore the topic</p>
+
+            <li>
+              <a href="#rc6" class="govuk-!-font-weight-bold">
+                Inheritance Tax <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+            <li>
+              <a href="#rc7" class="govuk-!-font-weight-bold">
+                Capital Gains Tax <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+            <li>
+              <a href="#rc8" class="govuk-!-font-weight-bold">
+                Death and bereavement <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+{% endblock %}
