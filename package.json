@@ -1,10 +1,10 @@
 {
   "name": "express-prototype",
   "description": "GOVUK prototyping app in Express",
-  "version": "8.3.0",
+  "version": "8.9.0",
   "private": true,
   "engines": {
-    "node": "^8.9.1"
+    "node": "^10.0.0"
   },
   "scripts": {
     "start": "node start.js",
